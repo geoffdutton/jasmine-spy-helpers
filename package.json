@@ -1,0 +1,34 @@
+{
+  "name": "jasmine-spy-helpers",
+  "version": "3.4.0",
+  "description": "Updated jasmine spy helpers for less boilerplate code.",
+  "main": "dist/jasmine-spy-helpers.js",
+  "author": "Geoff Dutton <g.dutton@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "jasmine": "^3.4.0",
+    "karma": "^4.1.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-coverage": "^1.1.2",
+    "karma-jasmine": "^2.0.1",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-rollup-preprocessor": "^7.0.0",
+    "rollup": "^1.12.2",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-esformatter": "^0.7.0",
+    "rollup-plugin-istanbul": "^2.0.1",
+    "standard": "^12.0.1"
+  },
+  "scripts": {
+    "build": "rollup --config",
+    "test": "karma start --single-run"
+  },
+  "standard": {
+    "envs": {
+      "jasmine": true
+    }
+  }
+}

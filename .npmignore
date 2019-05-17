@@ -1,0 +1,11 @@
+# node
+node_modules/
+
+# Only needed for development.
+babel.config.js
+.gitignore
+test/
+karma.conf.js
+coverage
+rollup.config.js
+.travis.yml
