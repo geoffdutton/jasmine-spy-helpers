@@ -9,6 +9,7 @@
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "babel-preset-es2015-rollup": "^3.0.0",
+    "coveralls": "^3.0.3",
     "jasmine": "^3.4.0",
     "karma": "^4.1.0",
     "karma-chrome-launcher": "^2.2.0",
@@ -23,7 +24,8 @@
   },
   "scripts": {
     "build": "rollup --config",
-    "test": "karma start --single-run"
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "test": "standard && karma start --single-run"
   },
   "standard": {
     "envs": {

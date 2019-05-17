@@ -16,11 +16,12 @@ module.exports = config => {
     coverageReporter: {
       reporters: [
         {
-          type: 'text',
+          type: 'text'
         },
         {
           type: 'lcov',
           dir: 'coverage/',
+          subdir: '.'
         }
       ]
     },
@@ -35,7 +36,7 @@ module.exports = config => {
       output: {
         format: 'iife',
         name: 'mainTest',
-        sourcemap: 'inline',
+        sourcemap: 'inline'
       }
     }
   })
