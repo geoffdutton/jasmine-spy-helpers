@@ -9,3 +9,5 @@ karma.conf.js
 coverage
 rollup.config.js
 .travis.yml
+.idea
+.nvmrc

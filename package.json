@@ -1,6 +1,6 @@
 {
   "name": "jasmine-spy-helpers",
-  "version": "3.4.0",
+  "version": "3.0.0",
   "description": "Updated jasmine spy helpers for less boilerplate code.",
   "main": "dist/jasmine-spy-helpers.js",
   "author": "Geoff Dutton <g.dutton@gmail.com>",
@@ -25,7 +25,8 @@
   "scripts": {
     "build": "rollup --config",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "test": "standard && karma start --single-run"
+    "prepublishOnly": "rm -r dist && yarn test && yarn build",
+    "test": "standard && karma start karma.conf.js --single-run"
   },
   "standard": {
     "envs": {
