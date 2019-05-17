@@ -1,11 +1,14 @@
 
 module.exports = config => {
   config.set({
+    singleRun: true,
+    autoWatch: false,
+
     files: [{ pattern: 'test/**/*.spec.js', watched: false }],
 
     frameworks: ['jasmine'],
 
-    reporters: ['mocha', 'coverage'],
+    reporters: ['progress', 'coverage'],
 
     browsers: ['ChromeHeadless'],
 

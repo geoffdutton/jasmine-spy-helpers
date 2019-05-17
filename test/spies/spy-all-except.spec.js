@@ -1,7 +1,8 @@
 
+import { isSpy } from '../../src/core/helpers'
 import { spyAllExcept } from '../../src/core/spies/spy-all-except.js'
 
-describe('resetAll', () => {
+describe('spyAllExcept', () => {
   it('should spy methods of object except one', () => {
     const o = {
       id: 1,
@@ -12,9 +13,9 @@ describe('resetAll', () => {
 
     spyAllExcept(o, 'foo')
 
-    expect(jasmine.isSpy(o.foo)).toBe(false)
-    expect(jasmine.isSpy(o.bar)).toBe(true)
-    expect(jasmine.isSpy(o.baz)).toBe(true)
+    expect(isSpy(o.foo)).toBe(false)
+    expect(isSpy(o.bar)).toBe(true)
+    expect(isSpy(o.baz)).toBe(true)
 
     expect(o.id).toBe(1)
   })
@@ -29,9 +30,26 @@ describe('resetAll', () => {
 
     spyAllExcept(o, ['foo', 'bar'])
 
-    expect(jasmine.isSpy(o.foo)).toBe(false)
-    expect(jasmine.isSpy(o.bar)).toBe(false)
-    expect(jasmine.isSpy(o.baz)).toBe(true)
+    expect(isSpy(o.foo)).toBe(false)
+    expect(isSpy(o.bar)).toBe(false)
+    expect(isSpy(o.baz)).toBe(true)
+
+    expect(o.id).toBe(1)
+  })
+
+  it('should spy all if passed exceptions do not exist', () => {
+    const o = {
+      id: 1,
+      foo () {},
+      bar () {},
+      baz () {}
+    }
+
+    spyAllExcept(o, 'nothing')
+
+    expect(isSpy(o.foo)).toBe(true)
+    expect(isSpy(o.bar)).toBe(true)
+    expect(isSpy(o.baz)).toBe(true)
 
     expect(o.id).toBe(1)
   })
