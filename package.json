@@ -24,7 +24,7 @@
   "scripts": {
     "build": "rollup --config",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "prepublishOnly": "rm -r dist && yarn test && yarn build",
+    "prepublishOnly": "rm -rf dist && yarn test && yarn build",
     "test": "standard && karma start karma.conf.js --single-run"
   },
   "standard": {
