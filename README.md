@@ -1,4 +1,5 @@
 # jasmine-spy-helpers
+[![NPM version](http://img.shields.io/npm/v/jasmine-spy-helpers.svg?style=flat-square)](https://www.npmjs.com/package/jasmine-spy-helpers)
 [![Build Status](https://travis-ci.org/geoffdutton/jasmine-spy-helpers.svg?branch=master)](https://travis-ci.org/geoffdutton/jasmine-spy-helpers)
 [![Coverage Status](https://coveralls.io/repos/github/geoffdutton/jasmine-spy-helpers/badge.svg?branch=master)](https://coveralls.io/github/geoffdutton/jasmine-spy-helpers?branch=master)
 
