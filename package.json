@@ -1,6 +1,6 @@
 {
   "name": "jasmine-spy-helpers",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Updated jasmine spy helpers for less boilerplate code.",
   "main": "dist/jasmine-spy-helpers.js",
   "author": "Geoff Dutton <g.dutton@gmail.com>",
