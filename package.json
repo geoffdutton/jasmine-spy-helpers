@@ -19,7 +19,7 @@
     "rollup": "^1.12.2",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-istanbul": "^2.0.1",
-    "standard": "^12.0.1"
+    "standard": "^14.3.3"
   },
   "scripts": {
     "build": "rollup --config",
